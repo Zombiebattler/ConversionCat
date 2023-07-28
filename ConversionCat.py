@@ -45,6 +45,7 @@ def convert_VIDEO(input_dir, output_dir, filename):
 
 def get_files(source):
     global files_found, images_converted, videos_converted, videos_deletet, images_deletet
+    print(YELLOW + "[!]you can change the formats in the code")
     print(GREEN + f"Scanning ->" + RED + f" {folder}")
     for file in os.listdir(source):
         files_found += 1
@@ -82,7 +83,7 @@ def summary(length):
     print(f"└─── Time Elapsed -> " + GREEN + f"{length} Seconds" + YELLOW + "\n")
 
 def start():
-    print(Fore.LIGHTGREEN_EX + """
+    print(Fore.LIGHTGREEN_EX + f"""
    _____                              _              _____      _   
   / ____|                            (_)            / ____|    | |  
  | |     ___  _ ____   _____ _ __ ___ _  ___  _ __ | |     __ _| |_ 
@@ -92,8 +93,12 @@ def start():
                                                                     
                                                                     
                        Made by Zombiebattler
+                       
+                           {convert_image} --> {i_to}
+                           {convert_video} --> {v_to}
 
                                                      """)
+
     print(f" \n \n")
 
 
@@ -122,4 +127,4 @@ if create_summary:
     summary(length)
 
 print(" ")
-print(GREEN + "ConversionCat v1.1 \nMade by Zombiebattler \nhttps://github.com/Zombiebattler \n")
+print(GREEN + "ConversionCat v1.2 \nMade by Zombiebattler \nhttps://github.com/Zombiebattler \n")
