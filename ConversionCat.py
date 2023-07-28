@@ -18,7 +18,7 @@ i_to = "png"                        #what type should it be converted to ?
 
 
 video = True                        #should the video be converted ?
-remove_videos = False                #should the old video be deleted after the conversion ?
+remove_videos = False               #should the old video be deleted after the conversion ?
 convert_video = "mp4"               #which video type should be changed ?
 v_to = "gif"                        #what type should it be converted to ?
 
