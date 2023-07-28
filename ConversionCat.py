@@ -7,7 +7,7 @@ import os
 
 #─── Variables ───#
 
-folder = ""                         #the folder to be scanned !!! leave blank for manual entry
+folder = ""                         #the folder to be scanned !!! leave blank for manual entry !!! if the variable is used use backslash between folders !!!
 
 create_summary = True               #should a summary be made ?
 
@@ -44,8 +44,7 @@ def convert_VIDEO(input_dir, output_dir, filename):
     print(YELLOW + f"converted " + RED + f"{filename} " + YELLOW + "to " + GREEN + f"{output_filename}")
 
 def get_files(source):
-    global files_found, images_converted, videos_converted, videos_deletet, images_deletet
-    print(YELLOW + "[!]you can change the formats in the code")
+    global files_found, images_converted, videos_converted, videos_deletet, images_deletet, folder
     print(GREEN + f"Scanning ->" + RED + f" {folder}")
     for file in os.listdir(source):
         files_found += 1
@@ -90,27 +89,33 @@ def start():
  | |    / _ \| '_ \ \ / / _ \ '__/ __| |/ _ \| '_ \| |    / _` | __|
  | |___| (_) | | | \ V /  __/ |  \__ \ | (_) | | | | |___| (_| | |_ 
   \_____\___/|_| |_|\_/ \___|_|  |___/_|\___/|_| |_|\_____\__,_|\__|
+                                  {version}                                    
+                                   
                                                                     
-                                                                    
-                       Made by Zombiebattler
-                       
-                           {convert_image} --> {i_to}
-                           {convert_video} --> {v_to}
+                          Made by Zombiebattler
+                             
+""")
 
-                                                     """)
-
-    print(f" \n \n")
+    print(f" \n \n \n \n")
+    if image:
+        print(Fore.LIGHTYELLOW_EX + f"{convert_image} --> {i_to}")
+    if video:
+        print(Fore.LIGHTYELLOW_EX + f"{convert_video} --> {v_to}")
+    print("\n" + Fore.LIGHTYELLOW_EX + "[!]you can change the formats in the code" + Fore.LIGHTGREEN_EX + "\n")
 
 
 init()
+version = "v1.4"
 start()
-
 if folder == "":
     folder = input("folder: ")
+    while os.path.exists(folder) != True:
+        print(f"this folder does not exist")
+        folder = input("folder: ")
 
 RED = Fore.LIGHTRED_EX
 GREEN = Fore.LIGHTGREEN_EX
-YELLOW = Fore.LIGHTYELLOW_EX
+YELLOW = Fore.YELLOW
 WHITE = Fore.WHITE
 
 files_found = 0
@@ -127,4 +132,4 @@ if create_summary:
     summary(length)
 
 print(" ")
-print(GREEN + "ConversionCat v1.2 \nMade by Zombiebattler \nhttps://github.com/Zombiebattler \n")
+print(GREEN + f"ConversionCat {version} \nMade by Zombiebattler \nhttps://github.com/Zombiebattler \n")
