@@ -57,7 +57,7 @@ def get_files(source):
                 images_deletet += 1
             images_converted += 1
         elif file.endswith(f'.{convert_video}') and video == True:
-            print(WHITE + file + GREEN + f" is a .{convert_video} file \nconverting ... \n!!! This may take a wile !!!")
+            print(WHITE + file + GREEN + f" is a .{convert_video} file \nconverting ... \n!!! that might take a while !!!")
             convert_VIDEO(folder, folder, file)
             if remove_videos:
                 os.remove(source + "\\" + file)
