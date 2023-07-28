@@ -22,7 +22,7 @@ ConversionCat is a powerful and efficient software program designed to facilitat
 > 14.  PDF (`.pdf`) - Note: Support for PDF is limited to opening and manipulating individual pages.
 > 15.  PSD (`.psd`) - Note: Support for PSD is limited to basic parsing.
 
- [PIL Documentation]([https://pillow.readthedocs.io/](https://pillow.readthedocs.io/))
+ [PIL Documentation](https://pillow.readthedocs.io/](https://pillow.readthedocs.io/)
 
 ## Supported video formats
 (September 2021)
@@ -36,4 +36,4 @@ ConversionCat is a powerful and efficient software program designed to facilitat
 > 7.  wmv (`.vmv`)
 > 8.  mpeg (`.mpeg`)
 
-[MoviePy Documentation]([https://github.com/Zulko/moviepy)
+[MoviePy Documentation](https://github.com/Zulko/moviepy/)
