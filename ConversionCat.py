@@ -1,7 +1,6 @@
 from moviepy.editor import VideoFileClip
 from colorama import Fore, init
 from PIL import Image
-import datetime
 import time
 import os
 
@@ -123,4 +122,4 @@ if create_summary:
     summary(length)
 
 print(" ")
-print(GREEN + "ConversionCat v1.0 \nMade by Zombiebattler \nhttps://github.com/Zombiebattler \n")
+print(GREEN + "ConversionCat v1.1 \nMade by Zombiebattler \nhttps://github.com/Zombiebattler \n")
