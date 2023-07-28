@@ -1,6 +1,6 @@
 # # ConversionCat
 
-ConversionCat is a powerful and efficient software program designed to facilitate the seamless conversion of files within directories. Whether you have a vast collection of documents, images, or media files that need transformation, this program offers a simple and intuitive solution to automate the process, saving you valuable time and effort.
+ConversionCat is an efficient script designed to facilitate the seamless conversion of files within directories. Whether you have a vast collection of documents, images, or media files that need transformation, this program offers a simple and intuitive solution to automate the process, saving you valuable time and effort.
 
 ![](images/bild1.png)
 
