@@ -10,7 +10,7 @@ ConversionCat is an efficient script designed to facilitate the seamless convers
 ## Supported image formats
 (September 2021)
 
-> 1.  JPEG (`.jpg`, `.jpeg`)
+> 1.  JPEG (`.jpeg`)
 > 2.  PNG (`.png`)
 > 3.  BMP (`.bmp`)
 > 4.  GIF (`.gif`) - Note: GIF support is limited to basic GIFs. Animated GIFs are not fully supported.
